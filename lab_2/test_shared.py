@@ -5,7 +5,7 @@ sh.afunction()
 
 def space_compress(str_in:str):
 	"""
-	Take a spring and return a string a string with no whitespaces
+	Take a spring and return a string with no whitespaces
 
 	Args:
 		- str_in(str): string to remove whitespace
@@ -18,7 +18,7 @@ def space_compress(str_in:str):
 		str_out = str_in.replace('\n',"")
 
 		# reduce multiple whitespaces into one white space
-		str_out = " ".join(str_in.split())
+		str_out = " ".join(str_out.split())
 
 		return str_out
 
