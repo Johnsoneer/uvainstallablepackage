@@ -30,7 +30,7 @@ def test_skip_string():
 def test_skip_again():
     print("My platform is", sys.platform)
     test_string = " This! is      a ,test string  "
-    assert "This! is a test string" == space_compress(test_string), "String <{}> not cleaned as expected".format(test_string)
+    assert "This is a test string" == space_compress(test_string), "String <{}> not cleaned as expected".format(test_string)
 
 @pytest.mark.skipif(sys.platform != "darwin", reason='Skipped when NOT run on the sys.platform=="darwin"')
 def test_skip_darwin():

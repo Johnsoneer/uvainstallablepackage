@@ -11,7 +11,7 @@ def space_compress(str_in:str):
 		- str_in(str): string to remove whitespace
 	"""
 	if type(str_in) != str:
-		return "Expected string but got {}".format(dtype(str_in))
+		return "Expected string but got {}".format(type(str_in))
 
 	else:
 		# replace multiline string with one-line string
@@ -19,7 +19,7 @@ def space_compress(str_in:str):
 
 		# reduce multiple whitespaces into one white space
 		str_out = " ".join(str_out.split())
-
+		str_out = sh.clean_string(str_out)
 		return str_out
 
 # if __name__=="__main__":
